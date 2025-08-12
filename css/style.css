@@ -1,0 +1,551 @@
+/* importing fonts */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Gaegu:wght@300;400;700&family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Gaegu:wght@300;400;700&family=Permanent+Marker&family=Teko:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Gaegu:wght@300;400;700&family=Permanent+Marker&family=Teko:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Gaegu:wght@300;400;700&family=Permanent+Marker&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Teko:wght@300..700&display=swap');
+
+/* universal css  */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color : #f1f1f1;
+}
+/* universal css  */
+
+
+/* header css starts  */
+header {
+    height: 200px;
+    margin-bottom : 55px;
+    font-family: "Playfair Display", serif;
+}
+
+.topHeader {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f8f8f8;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.starting, .ending {
+    display: flex;
+    align-items: center;
+    margin: 15px;
+}
+
+.starting p{
+    color : #917236;
+}
+
+.ending {
+    gap: 20px;
+    margin-right: 20px;
+}
+
+.ending p{
+    cursor: pointer;
+    color : #917236;
+}
+
+.ending p:hover{
+    color : #555;
+}
+
+/* Dropdown styling */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 120px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border: 1px solid #ddd;
+}
+
+.dropdown-content a {
+    color: #917236;
+    padding: 10px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+.imgContainer {
+    height: 120px;
+}
+
+.imgContainer img {
+    height: 100%;
+    width: auto;
+}
+
+
+.headerContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.navbarItems{
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+}
+
+.navbarItems p {
+    margin: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    color : #917236;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px 0;
+    margin-bottom : 10px;
+}
+
+.navbar p {
+    cursor: pointer;
+    font-size: 16px;
+    position: relative;
+}
+
+.nav-item {
+    position: relative;
+    color : #917236;
+}
+
+.nav-item p {
+    margin: 0;
+    padding: 0px 10px;
+}
+
+.nav-item .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    z-index: 1;
+    min-width: 900px;
+    border: 1px solid #ddd;
+}
+
+.nav-item .dropdown-content a {
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+}
+
+
+/* chnaged the style when hovered  */
+.nav-item .dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.nav-item:hover .dropdown-content {
+    display: block;
+}
+
+
+.christmasContent{
+    text-align: left;
+    float: left;
+}
+
+.worldContent{
+    display: flex;
+    justify-content: start;
+}
+
+/* header css ends  */
+
+
+
+/* main css starts  */
+.mainContent{
+    background-color : black;
+    color : white;
+    height : 450px;
+    width : 100%;
+    display : flex;
+    justify-content: center;
+    font-family: "Exo 2", sans-serif;
+}
+
+.mainImg{
+    width : 50%;
+}
+
+.content{
+    width : 50%;
+    display: flex;
+    align-items: center;
+    padding-left : 30px;
+}
+
+.mainImg img{
+    height : 100%;
+}
+
+.insideBox h1{
+    margin-bottom : 30px;
+}
+
+.insideBox p{
+    margin-bottom : 30px;
+}
+
+/* button css  */
+.button ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.button ul li {
+    --c: goldenrod;
+    color: var(--c);
+    font-size: 16px;
+    border: 0.3em solid var(--c);
+    border-radius: 0.5em;
+    width: 12em;
+    height: 3em;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: sans-serif;
+    letter-spacing: 0.1em;
+    text-align: center;
+    line-height: 3em;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: 0.5s;
+    margin: 1em;
+}
+
+.button ul li span {
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    background-color: var(--c);
+    transform: translateY(150%);
+    border-radius: 50%;
+    left: calc((var(--n) - 1) * 25%);
+    transition: 0.5s;
+    transition-delay: calc((var(--n) - 1) * 0.1s);
+    z-index: -1;
+}
+
+.button ul li:hover {
+    color: black;
+    cursor: pointer;
+}
+
+.button ul li:hover span {
+    transform: translateY(0) scale(2);
+}
+
+.button ul li span:nth-child(1) {
+    --n: 1;
+}
+
+.button ul li span:nth-child(2) {
+    --n: 2;
+}
+
+.button ul li span:nth-child(3) {
+    --n: 3;
+}
+
+.button ul li span:nth-child(4) {
+    --n: 4;
+}
+/* button css ends  */
+
+.heading h1{
+    text-align: center;
+    margin : 30px;
+    color : #555;
+    font-family: "Exo 2", sans-serif;
+}
+
+/* deals css starts */
+.giftContainer{
+    display : flex;
+    justify-content: space-evenly;
+}
+
+.insideGift{
+    height: 261px;
+    width: 263px;
+}
+
+.insideGift img{
+    height : 100%;
+    width: 100%;
+    transform : scale(1);
+    transition : all .3s ease-in-out;
+}
+
+.description{
+    font-family: "Exo 2", sans-serif;
+    text-align: center;
+    color : #555;
+
+}
+
+.insideGift:hover img{
+    transform : scale(1.1);
+}
+/* deals css ends  */
+/* main css ends  */
+
+
+/* footer css starts */
+footer{
+    background-color: white;
+    margin-top : 50px;
+    padding-top : 30px;
+}
+
+
+.footerContainer{
+    display : flex;
+    justify-content: space-between;
+}
+
+.insideFooter{
+    height: 261px;
+    width: 325px;
+}
+
+.insideFooter ul li{
+    list-style: none;
+    margin : 15px;
+}
+
+.insideFooter ul li h3{
+    color : #917236;
+    text-align: left;
+}
+
+.insideFooter ul li a{
+    color : #917236;
+    text-decoration: none;
+    font-family: "Exo 2", sans-serif;
+}
+
+.insideFooter ul li a:hover{
+    color : #555;
+    font-size: 17px;
+    transition : 0.3s ease;
+}
+
+.insideFooter h3{
+    color : #917236;
+    text-align: center;
+    margin-top : 20px;
+    font-family: "Dancing Script", cursive;
+    cursor : pointer;
+}
+
+.logoContainer{
+    display : flex;
+    justify-content: space-evenly;
+}
+
+.logoContainer menu{
+    display : flex;
+    justify-content: space-evenly;
+    margin : 10px;
+}
+
+.logoContainer menu li{
+    list-style: none;
+    margin : 10px;
+}
+
+.logoContainer menu li a{
+    text-decoration: none;
+}
+.logoContainer menu li a i{
+    font-size: 20px;
+    color : #917236;
+}
+
+.logoContainer menu li a i:hover{
+    font-size : 21px;
+    color : #917236;
+    transition : .1s ease;
+
+}
+
+.formBox{
+    display: flex;
+    justify-content: center;
+}
+
+form h3{
+    text-align: center;
+    margin-bottom : 10px;
+    margin-top : 20px;
+}
+
+form p{
+    color : #917236;
+    font-family: "Exo 2", sans-serif;
+}
+
+form input{
+    margin-bottom : 20px;
+    padding : 5px 4px;
+    width : 100%;
+}
+
+.submitBtn{
+   display: flex;
+   justify-content: center;
+}
+/* footer css ends  */
+
+
+
+/* making the page responsive  */
+/* smaller screens css  */
+@media (max-width: 600px) {
+    .headerContent {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbarItems {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbarItems p {
+        margin: 5px 0;
+        font-size: 14px;
+    }
+
+    .giftContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mainContent {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mainImg, .content {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .insideBox {
+        text-align: center;
+    }
+
+    .footerContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .insideFooter {
+        width: 100%;
+    }
+}
+/* smaller screens css  */
+
+
+/* medium screens css  */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .headerContent {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbarItems {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .giftContainer {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .mainContent {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mainImg, .content {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .footerContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .insideFooter {
+        width: 100%;
+    }
+}
+/* medium screens css  */
+
+/* large screens css  */
+@media (min-width: 1025px) {
+    .navbarItems {
+        flex-direction: row;
+    }
+
+    .giftContainer {
+        justify-content: space-evenly;
+    }
+
+    .mainContent {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .mainImg, .content {
+        width: 50%;
+    }
+
+    .footerContainer {
+        justify-content: space-between;
+    }
+}
+/* large screens css  */

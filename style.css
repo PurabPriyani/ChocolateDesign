@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gaegu:wght@300;400;700&family=Permanent+Marker&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;  
+    color : white;
+}
+
+/* header css */
+header {
+    height: 14vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-container {
+    height: 14vh;
+}
+
+.logo-container img {
+    height: 100%;
+    width: auto;
+    margin: auto 130px;
+    float: left;
+}
+
+.heading-container {
+    display: flex;
+    align-items: center;
+}
+
+.heading-container h1 {
+    color: white;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.7);
+    font-family: "Gaegu", sans-serif;
+    font-size: 50px;
+}
+
+/* header css ends  */
+
+/* main css  */
+main {
+    width: 100%;
+}
+
+main section {
+    display: flex;
+    justify-content: center;
+    padding: 0 7vh;
+}
+
+.box {
+    height: 350px;
+    width: 600px;
+    overflow-y: scroll;
+    box-sizing: border-box;
+    margin: 90px 0;
+    cursor: pointer;
+}
+
+
+/* css to remove the scroll bar  */
+.box::-webkit-scrollbar {
+    display: none;
+}
+
+.inside-container{
+    width: 70%;
+    height : 100%;
+    border : 2px solid grey;
+}
+
+.song-lyrics p{
+    margin: 40px 0;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.7);
+    font-family: "Permanent Marker", cursive;
+    font-size : 27px;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.video-container iframe {
+    border-radius: 10px;
+}
+
+/* main css ends  */
